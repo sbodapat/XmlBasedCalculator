@@ -5,4 +5,5 @@
 int xmlparser (char* fp) {
     /*xmlparser function gets the filepointer as an input from the Config Parser file.*/
     
+    
 }

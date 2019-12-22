@@ -5,6 +5,7 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1524D21-DFB2-4474-A188-A0136A8C06EB}"
 	ProjectSection(SolutionItems) = preProject
+		learnings\fileparse.c = learnings\fileparse.c
 		src\XmlParser.c = src\XmlParser.c
 	EndProjectSection
 EndProject
