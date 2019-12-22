@@ -7,12 +7,13 @@
 
 int main() {
 	FILE* fp;
-	char file_name[100],c;
+	char file_name[100];
+	char c;
 
 	printf("Enter the filename: ");
 	scanf("%s",file_name);
 
-	fp = fopen(file_name,'r');
+	fp = fopen(file_name,"r"); /* Needs to have double quote to work */
 
 	if (!fp) {
 		printf("Nothing in file\n");
