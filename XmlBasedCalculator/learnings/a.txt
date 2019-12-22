@@ -1,2 +1,7 @@
 Nothing could be ever here.
 How could this be?
+I am trying to count the number of counts present in this code.
+The output of this should be only 2 counts.
+count
+count.
+count count
