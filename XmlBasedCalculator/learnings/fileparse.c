@@ -1,5 +1,7 @@
 /* Learning curve for xml parsing based calculator. */
 /* This is for file parsing and how do we do it.    */
+
+/* This file only deals on how to parse the file and re print them.*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
@@ -32,49 +34,51 @@ int main() {
 	}
 	c = fgetc(fp);
 
-	while (c!=EOF) {
-		/*printf ("%c",c);*/
-		tempStorage[i] = c;
-		i++;
+	while (c!= EOF) {
+		printf ("%c",c);
 		/* This is to count white spaces in the text file */
-		if (c == 32U) {
+		/*if (c == 32U) {
 			whiteSpaceCounter++;
 		}
-		/* It ends here */
+		/* It ends here 
 		if (c == 13U) {
 			carriageReturnCounter++;
-		}
-		if (c == 32U || c == 13U || c == 46U) {
+		}*/
+		/*if (c == '<') {
 		    printf("\n From Code: Am I entering here\n");
-			numberOfCounts = compareString (&tempStorage);
+			tempStorage[i] = c;
+			i++;
+			if (c == 32U){
+				numberOfCounts = compareString (tempStorage);
+				i = 0;
+			}
 			if (numberOfCounts){
 				countWordCount++;
 			}
-			i = 0;
-		}
+		}*/
 		c = fgetc(fp);
 	}
 	fclose (fp);
-	printf("\nWhitespaces are: %d\n",whiteSpaceCounter);
+	/*printf("\nWhitespaces are: %d\n",whiteSpaceCounter);
 	printf("Carriage Return are: %d\n",carriageReturnCounter);
-	printf("number of count in the text file are: %d\n",countWordCount);
+	printf("number of count in the text file are: %d\n",countWordCount);*/
 	return 0;
 }
 
-int compareString (char* tempStorage) {
+/*int compareString (char* tempStorage) {
     int i;
 	for (i=0;i<10;i++) {
 		printf("%c",tempStorage[i]);
 		printf(" index:%d ",i);
 	}
 	if (tempStorage[0] == 'c' && tempStorage[1] == 'o' && tempStorage[2] == 'u'
-	    && tempStorage[3] == 'n' && tempStorage[4] == 't' && (tempStorage[5] == ' ' || 
-		tempStorage[5] == 13U || tempStorage[5] == '.')){
-			printf ("\nFrom code: Entering the true part of the function\n");
+	    && tempStorage[3] == 'n' && tempStorage[4] == 't' /*&& (tempStorage[5] == ' ' || 
+		tempStorage[5] == 13U || tempStorage[5] == '.')*/){
+	/*		printf ("\nFrom code: Entering the true part of the function\n");
 			
 			return 1;
 		}
 	else {
 		return 0;
 	}
-}
+}*/
